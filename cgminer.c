@@ -4101,8 +4101,8 @@ static void show_hash(struct work *work, char *hashshow)
 	h32 = be32toh(*hash32);
 	uintdiff = round(work->work_difficulty);
 	suffix_string(work->share_diff, diffdisp, sizeof (diffdisp), 0);
-	snprintf(hashshow, 64, "%08lx Diff %s/%"PRIu64"%s", h32, diffdisp, uintdiff,
-		 work->block? " BLOCK!" : "");
+	snprintf(hashshow, 64, "%08lx Diff %s/%"PRIu64"%s Best share %s", h32, diffdisp, uintdiff,
+		work->block ? " BLOCK!" : "", best_share);
 }
 
 #ifdef HAVE_LIBCURL

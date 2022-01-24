@@ -64,3 +64,5 @@ lib/warn-on-use.h
 mkinstalldirs
 
 *.swp
+/.vs
+/compat/jansson-2.9/out/build/x64-Debug
